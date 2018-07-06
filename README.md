@@ -6,6 +6,7 @@
 - `多种支付模式` - 支持公众号支付, 刷卡支付, 扫码支付, 微信红包, 企业付款
 - `营销相关功能` - 微信代金券
 - `帐单下载与格式化` - 支持微信对帐单, 微信资金帐单
+- `支持服务商模式` - 所有api均可自行传入sub_appid, sub_mch_id
 - `微信支付仿真测试系统` - 支持沙盒模式, 用于完成支付验收流程
 
 ## 使用前必读
@@ -333,7 +334,7 @@ let result = await api.transfers({
 });
 ```
 ##### 相关默认值:
-- `check_name` - OPTION_CHECK
+- `check_name` - FORCE_CHECK
 - `spbill_create_ip` - 默认为初始化时传入的值或`127.0.0.1`
 
 ### transfersQuery: 查询企业付款
